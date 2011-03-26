@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "ZoomingPDFViewer.app"
-               BlueprintName = "ZoomingPDFViewer"
-               ReferencedContainer = "container:ZoomingPDFViewer.xcodeproj">
+               BuildableName = "ZoomingJPEGViewer.app"
+               BlueprintName = "ZoomingJPEGViewer"
+               ReferencedContainer = "container:ZoomingJPEGViewer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,9 +41,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "ZoomingPDFViewer.app"
-            BlueprintName = "ZoomingPDFViewer"
-            ReferencedContainer = "container:ZoomingPDFViewer.xcodeproj">
+            BuildableName = "ZoomingJPEGViewer.app"
+            BlueprintName = "ZoomingJPEGViewer"
+            ReferencedContainer = "container:ZoomingJPEGViewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -60,9 +60,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "ZoomingPDFViewer.app"
-            BlueprintName = "ZoomingPDFViewer"
-            ReferencedContainer = "container:ZoomingPDFViewer.xcodeproj">
+            BuildableName = "ZoomingJPEGViewer.app"
+            BlueprintName = "ZoomingJPEGViewer"
+            ReferencedContainer = "container:ZoomingJPEGViewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -27,20 +27,23 @@
 		AFE29EE412079C5C003183E7 /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE29EE312079C5C003183E7 /* PDFScrollView.m */; };
 		AFE29EEE12079E88003183E7 /* TestPage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AFE29EED12079E88003183E7 /* TestPage.pdf */; };
 		F6973885133E43B8005FC9C2 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6973883133E43B8005FC9C2 /* MainWindow-iPad.xib */; };
+		F6D8DCF7133E93C700228BA2 /* TiledJPEGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D8DCF6133E93C700228BA2 /* TiledJPEGView.m */; };
+		F6D8DCFB133E953500228BA2 /* JPEGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D8DCFA133E953500228BA2 /* JPEGScrollView.m */; };
+		F6D8DD01133E99A000228BA2 /* TestPage150.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F6D8DD00133E99A000228BA2 /* TestPage150.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ZoomingPDFViewerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomingPDFViewerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* ZoomingPDFViewerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomingPDFViewerAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* ZoomingPDFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingPDFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* ZoomingJPEGViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingJPEGViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28D7ACF60DDB3853001CB0EB /* ZoomingPDFViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomingPDFViewerViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* ZoomingPDFViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomingPDFViewerViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* ZoomingPDFViewer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomingPDFViewer_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* ZoomingPDFViewer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZoomingPDFViewer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ZoomingJPEGViewer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomingJPEGViewer_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ZoomingJPEGViewer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZoomingJPEGViewer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AF2ADF8F121C7BED00F01FCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		AF2ADF91121C7BED00F01FCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZoomingPDFViewerViewController.xib; sourceTree = "<group>"; };
 		AF9862E91219FFA700843786 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "images/Icon-72.png"; sourceTree = "<group>"; };
@@ -57,6 +60,12 @@
 		AFE29EE312079C5C003183E7 /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
 		AFE29EED12079E88003183E7 /* TestPage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TestPage.pdf; sourceTree = "<group>"; };
 		F6973884133E43B8005FC9C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		F6D8DCF5133E93C700228BA2 /* TiledJPEGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledJPEGView.h; sourceTree = "<group>"; };
+		F6D8DCF6133E93C700228BA2 /* TiledJPEGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledJPEGView.m; sourceTree = "<group>"; };
+		F6D8DCF9133E953500228BA2 /* JPEGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEGScrollView.h; sourceTree = "<group>"; };
+		F6D8DCFA133E953500228BA2 /* JPEGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEGScrollView.m; sourceTree = "<group>"; };
+		F6D8DD00133E99A000228BA2 /* TestPage150.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestPage150.jpeg; sourceTree = "<group>"; };
+		F6D8DD0A133EA59800228BA2 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,12 @@
 				28D7ACF70DDB3853001CB0EB /* ZoomingPDFViewerViewController.m */,
 				AFE29EA012079441003183E7 /* TiledPDFView.h */,
 				AFE29EA112079441003183E7 /* TiledPDFView.m */,
+				F6D8DCF5133E93C700228BA2 /* TiledJPEGView.h */,
+				F6D8DCF6133E93C700228BA2 /* TiledJPEGView.m */,
 				AFE29EE212079C5C003183E7 /* PDFScrollView.h */,
 				AFE29EE312079C5C003183E7 /* PDFScrollView.m */,
+				F6D8DCF9133E953500228BA2 /* JPEGScrollView.h */,
+				F6D8DCFA133E953500228BA2 /* JPEGScrollView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -92,7 +105,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* ZoomingPDFViewer.app */,
+				1D6058910D05DD3D006BFB54 /* ZoomingJPEGViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +113,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F6D8DD0A133EA59800228BA2 /* ReadMe.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -113,7 +127,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* ZoomingPDFViewer_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* ZoomingJPEGViewer_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -129,8 +143,9 @@
 				AF9862ED1219FFA700843786 /* Icon.png */,
 				AF9862EE1219FFA700843786 /* Icon@2x.png */,
 				AF9862EF1219FFA700843786 /* iTunesArtwork */,
+				F6D8DD00133E99A000228BA2 /* TestPage150.jpeg */,
 				AFE29EED12079E88003183E7 /* TestPage.pdf */,
-				8D1107310486CEB800E47090 /* ZoomingPDFViewer-Info.plist */,
+				8D1107310486CEB800E47090 /* ZoomingJPEGViewer-Info.plist */,
 				AF2ADF8E121C7BED00F01FCC /* MainWindow.xib */,
 				AF2ADF90121C7BED00F01FCC /* ZoomingPDFViewerViewController.xib */,
 			);
@@ -159,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* ZoomingPDFViewer */ = {
+		1D6058900D05DD3D006BFB54 /* ZoomingJPEGViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ZoomingPDFViewer" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ZoomingJPEGViewer" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -171,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = ZoomingPDFViewer;
+			name = ZoomingJPEGViewer;
 			productName = ZoomingPDFViewer;
-			productReference = 1D6058910D05DD3D006BFB54 /* ZoomingPDFViewer.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* ZoomingJPEGViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +196,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZoomingPDFViewer" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZoomingJPEGViewer" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -196,7 +211,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* ZoomingPDFViewer */,
+				1D6058900D05DD3D006BFB54 /* ZoomingJPEGViewer */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +232,7 @@
 				AF2ADF92121C7BED00F01FCC /* MainWindow.xib in Resources */,
 				AF2ADF93121C7BED00F01FCC /* ZoomingPDFViewerViewController.xib in Resources */,
 				F6973885133E43B8005FC9C2 /* MainWindow-iPad.xib in Resources */,
+				F6D8DD01133E99A000228BA2 /* TestPage150.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +248,8 @@
 				28D7ACF80DDB3853001CB0EB /* ZoomingPDFViewerViewController.m in Sources */,
 				AFE29EA212079441003183E7 /* TiledPDFView.m in Sources */,
 				AFE29EE412079C5C003183E7 /* PDFScrollView.m in Sources */,
+				F6D8DCF7133E93C700228BA2 /* TiledJPEGView.m in Sources */,
+				F6D8DCFB133E953500228BA2 /* JPEGScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +292,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ZoomingPDFViewer_Prefix.pch;
-				INFOPLIST_FILE = "ZoomingPDFViewer-Info.plist";
+				GCC_PREFIX_HEADER = ZoomingJPEGViewer_Prefix.pch;
+				INFOPLIST_FILE = "ZoomingJPEGViewer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = ZoomingPDFViewer;
+				PRODUCT_NAME = ZoomingJPEGViewer;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,10 +307,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ZoomingPDFViewer_Prefix.pch;
-				INFOPLIST_FILE = "ZoomingPDFViewer-Info.plist";
+				GCC_PREFIX_HEADER = ZoomingJPEGViewer_Prefix.pch;
+				INFOPLIST_FILE = "ZoomingJPEGViewer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = ZoomingPDFViewer;
+				PRODUCT_NAME = ZoomingJPEGViewer;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -328,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ZoomingPDFViewer" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ZoomingJPEGViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -337,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZoomingPDFViewer" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ZoomingJPEGViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
