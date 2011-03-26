@@ -1,3 +1,53 @@
+### ZoomingPDFJPEGViewer ###
+This a very slightly modified version of Apple's sample code "ZoomingPDFViewer".
+See original Readme below.
+
+This version intends to do the same thing, but replace the PDF document with a JPEG image.
+
+All Apple's original files have been left intact, except one line in ZoomingPDFViewerViewController.m:
+
+//	PDFScrollView *sv = [[PDFScrollView alloc] initWithFrame:[[self view] bounds]];
+JPEGScrollView *sv = [[JPEGScrollView alloc] initWithFrame:[[self view] bounds]];
+
+This branches the application to duplicates of the original Apple's two view classes:
+
+- TiledJPEGView.{h,m} is a modified clone of TiledPDFView.{h,m}
+- JPEGSCrollView.{h,m} is a modified clone of PDFSCrollView.{h,m}
+
+The modifications is these cloned classes have been really minimal, only the bare modifications to replace the PDF-specific code
+with UIImage equivalent. Even some variable names have been left unchanged even though they clearly relate to a PDF context (e.g. "page").
+
+The UIImage code should work. Indeed, the part of the code that computes are resampled version for the background view works fine.
+You can see it briefly while the CATilingLayer redraws the page.
+
+And *that* is broken. The code only paints white rectangle. Also my console fills up with error messages such as:
+
+Sat Mar 26 23:50:28 Prof.local ZoomingJPEGViewer[4415] <Error>: CGContextSetBlendMode: invalid context 0x0
+Sat Mar 26 23:50:28 Prof.local ZoomingJPEGViewer[4415] <Error>: CGContextSetAlpha: invalid context 0x0
+Sat Mar 26 23:50:28 Prof.local ZoomingJPEGViewer[4415] <Error>: CGContextTranslateCTM: invalid context 0x0
+Sat Mar 26 23:50:28 Prof.local ZoomingJPEGViewer[4415] <Error>: CGContextScaleCTM: invalid context 0x0
+Sat Mar 26 23:50:28 Prof.local ZoomingJPEGViewer[4415] <Error>: CGContextDrawImage: invalid context 0x0
+Sat Mar 26 23:50:28 Prof.local ZoomingJPEGViewer[4415] <Error>: CGContextRestoreGState: invalid context 0x0
+
+Yet, tracing though the code of the drawLayer method reveals a context that is OK, not null.
+
+This is where something is wrong, I don't know why. Here is its full code (from TiledJPEGView.m):
+
+-(void)drawLayer:(CALayer*)layer inContext:(CGContextRef)context
+{
+  CGContextSetRGBFillColor(context, 1.0,1.0,1.0,1.0);
+  CGContextFillRect(context,self.bounds);
+  CGContextSaveGState(context);
+  CGContextScaleCTM(context, myScale,myScale);
+  [self->jpegPage drawAtPoint:CGPointZero];  //	instead of CGContextDrawPDFPage(context, pdfPage);
+  CGContextRestoreGState(context);
+}
+
+I'm flummoxed. Any suggestion welcome.
+
+Jean-Denis Muys.
+
+
 ### ZoomingPDFViewer ###
 
 ===========================================================================

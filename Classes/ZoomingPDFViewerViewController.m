@@ -45,6 +45,7 @@
 
 #import "ZoomingPDFViewerViewController.h"
 #import "PDFScrollView.h"
+#import "JPEGScrollView.h"
 
 @implementation ZoomingPDFViewerViewController
 
@@ -54,7 +55,8 @@
 	[super loadView];
 	
 	// Create our PDFScrollView and add it to the view controller.
-	PDFScrollView *sv = [[PDFScrollView alloc] initWithFrame:[[self view] bounds]];
+//	PDFScrollView *sv = [[PDFScrollView alloc] initWithFrame:[[self view] bounds]];
+    JPEGScrollView *sv = [[JPEGScrollView alloc] initWithFrame:[[self view] bounds]];
 
 	
     [[self view] addSubview:sv];
